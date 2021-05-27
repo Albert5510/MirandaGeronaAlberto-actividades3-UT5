@@ -1,0 +1,80 @@
+
+    libro {   
+    float:left;
+    display:inline-table;      
+    border: 1px solid black; 
+    } 
+
+    libreria {   
+        display: table;            
+        width: 100%;                    
+        border: 1px solid black; 
+    } 
+     ISBN{   
+        text-align: center;   
+        display: table-row;            
+        width: 100px; 
+        border: 1px solid black;   
+        padding: 5px;
+    }
+    titulo{
+           
+        text-align: center;   
+        display: table-row;            
+        width: 100px; 
+        border: 1px solid black;   
+        padding: 5px;
+    }
+    nivelProfundidad{
+           
+        text-align: center;   
+        display: table-row;            
+        width: 100px; 
+        border: 1px solid black;   
+        padding: 5px;
+    }
+    autores{
+           
+        text-align: center;   
+        display: table-row;            
+        width: 100px; 
+        border: 1px solid black;   
+        padding: 5px;
+    }
+    editorial{
+           
+        text-align: center;   
+        display: table-row;            
+        width: 100px; 
+        border: 1px solid black;   
+        padding: 5px;
+    }
+    fechaPublicacion{
+           
+        text-align: center;   
+        display: table-row;            
+        width: 100px; 
+        border: 1px solid black;   
+        padding: 5px;
+    }
+    paginaWeb{
+           
+        text-align: center;   
+        display:table-row;            
+        width: auto; 
+        border: 1px solid black;   
+    }
+    precio{
+           
+        text-align: center;   
+        display: table-row;            
+        width: 100px; 
+        border: 1px solid black;   
+        padding: 5px;
+    }
+    nombre {   
+        display: table-row;   
+        width: auto;   
+        clear: both;   
+        border: 1px solid black; 
+        } 

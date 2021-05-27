@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Ejercicio4.css">
+    <meta charset="UTF-8">
+    <script>
+        function validarContraseña(){
+    if($("#contraseña").val() === $("#contraseña2").val()){
+         console.log("Las contraseñas son iguales");
+    }else{
+         console.log("Las contraseñas no son iguales");
+    }
+}
+    </script>
+</head>
+
+<body>
+    
+    <div id="capa">
+        
+        <form id="form" action="get">
+            <h3 id="h1">FORMULARIO REGISTRO</h3>
+            <label>usuario:<label id="asterisco">*</label></label>
+            <input id="entrada" type="text" pattern="^[A-Z][a-z1-9]+[1-9]$">
+            <br>
+            <label>contraseña:<label id="asterisco">*</label></label>
+            <input id="contraseña" type="password" pattern="^[1-9][1-9a-z]+[A-Z]$">
+            <br>
+            <label>Repita contraseña:<label id="asterisco">*</label></label>
+            <input id="contraseña2" type="password" pattern="^[1-9][1-9a-z]+[A-Z]$">
+            <br>
+            <label>email: <label id="asterisco">*</label></label>
+            <input id="entrada" type="email">
+            <br>
+            <label>Nombre</label>
+            <input id="entrada" type="text" pattern="^[A-Z][a-z]">
+            <br>
+            <label>Apellidos</label>
+            <input id="entrada" type="text" pattern="^[A-Z][a-z]">
+            <br>
+            <label>Edad</label>
+            <input id="entrada" type="number">
+            <br>
+            <label>Telefono: <label id="asterisco">*</label></label>
+            <input id="entrada" type="tel" pattern="^[6,7,9][1-9]{8}">
+            <br>
+            <input id="submit" type="submit" value="Registrarse">
+
+        </form>
+    </div>
+</body>
+
+</html>

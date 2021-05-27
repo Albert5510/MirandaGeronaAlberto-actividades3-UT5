@@ -1,0 +1,37 @@
+<input type="file" id="ArchivoImportado" />
+<button id="LeerBoton">Leer fichero</button>
+<div id="file-contents">
+
+</div>
+
+<script>
+    document.querySelector("#LeerBoton").addEventListener('change',function() {
+        setInterval(function(){
+            
+            let file = document.querySelector("#ArchivoImportado").files[0]; 
+            let reader = new FileReader();
+            reader.addEventListener('load', function(e) {
+                let text = e.target.result;
+                document.querySelector("#file-contents").innerHTML = "";
+                let lines = text.split("\n");
+                
+                for(let i = 0; i<lines.length;i++){
+                    let nodo = document.createElement("p");
+                    nodo.textContent = lines[i];
+                    if(nodo.textContent.includes("A:")){
+                        nodo.style.color = "red";
+                        nodo.style.textAlign = "right";
+                    }
+                    else{
+                        nodo.style.color = "blue";
+                        nodo.style.textAlign = "left";
+                    }
+                    document.querySelector("#file-contents").appendChild(nodo);
+                }
+
+        });
+        reader.readAsText(file);
+        },10000)
+        
+    });
+</script>

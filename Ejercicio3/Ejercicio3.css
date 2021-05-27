@@ -1,0 +1,32 @@
+#capa{
+    height: 50%;
+    width: 50%;
+    border-radius: 20%;
+    border-color: aqua;
+    border-width: 4px;
+    border-style: solid;
+    background: linear-gradient(to right,yellow,green);
+    position: relative;
+    top: 25%;
+    left: 25%;
+
+}
+#form{
+    position: relative;
+    display: inline;
+    align-items: center;
+    top: 25%;
+    left: 25%;
+}
+.entrada{
+    position: relative;
+    display: inline;
+    text-align: center;
+    
+}
+input:valid{
+    background-color: grey;
+}
+input:invalid{
+    background-color: red;
+}

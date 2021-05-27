@@ -1,0 +1,52 @@
+#capa{
+    height: 50%;
+    width: 30%;
+    border-radius: 5%;
+    border-color: brown;
+    border-width: 4px;
+    border-style: solid;
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+#form{
+    position: relative;
+    display: inline;
+    align-items: center;
+    top: 4%;
+    left: 9%;
+}
+.entrada{
+    top: 25%;
+    display: inline;
+    text-align: center;
+}
+#h1{
+    color: brown;
+    top: 100%;
+    left: 11%;
+    text-align: center;
+}
+#asterisco{
+    color: red;
+}
+#submit{
+    color: white;
+    background-color: brown;
+    top: 25%;
+    right: 50%;
+    display: inline;
+    text-align: center;
+}
+.contraseña, .contraseña2{
+    top: 25%;
+    display: inline;
+    text-align: center;
+}input:valid{
+    border-color: green;
+    border-width: 4px;
+}
+input:invalid{
+    border-color:red ;
+    border-width: 4px;
+}
